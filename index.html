@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="es-US">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -20,71 +21,7 @@
 <body data-new-gr-c-s-check-loaded="14.991.0" data-gr-ext-installed="">
   <div class="app-content">
     <main>
-      <!-- <header class="page-header" id="intro">
-        <div class="skewed_background">
-          <img src="./Warp_files/frame-a7dcb2aec892085b5384ac90f08da12eab7173689da0fd63f46feaaf6a5140de.svg"
-            alt="branchless icon">
-        </div>
-        <header class="app-nav" id="globalNav">
-          <div class="container-lg">
-            <nav>
-              <ul class="nav-root">
-                <li class="nav__section logo">
-                  <a href="https://getatlas.ca/" class="nav__link nav__logo">
-                    <img src="./assets/images/atlas.logo-white.svg" alt="logo" height="30px" />
-                  </a>
-                </li>
-                <li class="nav__section primary">
-                  <a href="#" class="nav__link btn btn-primary">Download</a>
-                </li>
-                <li class="nav__section mobile">
-                  <a href="#" class="nav__link btn btn-primary vrlps-trigger">Download</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-        <div class="container-lg justify-content-between" id="intro_content">
-          <div class="content">
-            <h1 class="page-header__title">Atlas is a spending account without the <span class="highlighted_phrase">fine
-                print.</span> <span class="highlighted_phrase"></span></h1>
-            <h2 class="page-header__subtitle">
-              A digital bank with zero fees.<br>Track what you spend with detailed analytics & 24/7 customer support.
-            </h2>
-            <div class="btn__group page-header__action">
-              <a href="#" class="nav__link btn btn-primary btn-lg">I want an account</a>
-            </div>
-            <div class="btn__group">
-              <a href="#" class="btn btn-sm btn--shadow btn-appstore">
-                <img src="./Warp_files/appstore.svg" class="appstore" />
-              </a>
-              <a href="#" class="btn btn-sm btn--shadow btn-playstore">
-                <img src="./Warp_files/playstore.svg" class="appstore" />
-              </a>
-            </div>
-          </div>
-          <div class="hero__image">
-            <div class="cardvirtualnew">
-              <img src="./Warp_files/card_virtual-70660df10157ab75c761ad1d7014e80e96dff665c0fdbc754e6ff2e56f4642e1.svg"
-                alt="card">
-            </div>
-            <div class="phone">
-              <div class="notch"></div>
-              <img
-                src="./Warp_files/transaction_details-77882c272ad8a47ddc7ceb598d9ae2e3d8df4c99ba4b58eb01080101f5c20fca.png"
-                alt="app transactions preview">
-            </div>
-            <div class="cardnew">
-              <img src="./Warp_files/card-a5fd51da7676c970e33f49f53a081f243e6f7b62a553c4ef741af0962cb3c89c.svg"
-                alt="card">
-            </div>
-          </div>
-        </div>
-      </header>
-       -->
-
       <div id="header-section">
-
         <header>
           <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="/">
@@ -119,7 +56,7 @@
                 </li>
               </ul>
               <ul class="form-inline my-lg-0 menu-button">
-                <button type="button" class="btn btn-secondary open-account">Open Your Account</button>
+                <button type="button" class="btn btn-secondary open-account">Get Early Access</button>
               </ul>
             </div>
           </nav>
@@ -134,8 +71,19 @@
                   way you save and interact with money. </p>
                 <p class="mobile-text">Earn upto 18% annually with DeFi & Rift. Beat Inflation. We're changing the way
                   you save and interact with money. </p>
-                <button type="button" class="btn btn-secondary get-started">Get Started <span> <img
-                      src="/assets/images/arrow.svg" width="15px" class="button-arrow" alt="arrow" /> </span> </button>
+              </div>
+            </div>
+            <div class="row email-button">
+              <div class="col-md-7">
+                <div class="join-button">
+                  <form action="https://formcarry.com/s/hfEwh1HiVsE" method="POST" accept-charset="UTF-8"
+                    class="email-subscription">
+                    <input type="email" name="email" class="email-enter" placeholder="Enter your email" required>
+                    <!-- your other form fields go here -->
+                    <button type="submit" class="submit-email" value="Get Early Access">Get Early Access</button>
+                  </form>
+
+                </div>
               </div>
             </div>
           </div>
@@ -158,17 +106,11 @@
         </div>
       </section>
 
-
-
-
-
-
       <section id="product">
         <div class="container-xl">
           <p class="body__subtitle text-center">With inflation hitting record highs of 6.8% in 2021, and the national
             average interest rate being 0.04%, you lost money by keeping your money in the bank. Earn 300x the National
             Average Interest rate now, risk-free. Beat inflation.
-
           </p>
           <h2 class="body__title text-center">Open an account in minutes.</h2>
 
@@ -266,54 +208,6 @@
           </div>
         </div>
       </section>
-      <!-- <section id="contactless">
-        <div class="container-lg xs-rows sm-cols align-items-center justify-content-between">
-          <div class="content">
-            <div>
-              <h2 class="body__title">Safer shopping,<br> payments that seem like magic.</h2>
-            </div>
-            <div class="list">
-              <div class="list__item">
-                <img class="icon"
-                  src="./Warp_files/checkmark-05ead90f1f6027acf1cf1c0e4d8ebd96afc9d6bcae2466039526e18e95c07ded.svg"
-                  alt="">
-                <p class="list__text">Pay faster with contactless technology without inserting your card in the
-                  terminal.</p>
-              </div>
-              <div class="list__item">
-                <img class="icon"
-                  src="./Warp_files/checkmark-05ead90f1f6027acf1cf1c0e4d8ebd96afc9d6bcae2466039526e18e95c07ded.svg"
-                  alt="">
-                <p class="list__text">Create virtual cards instanlty within the app, to stay just as safe online as
-                  offline.</p>
-              </div>
-              <div class="list__item">
-                <img class="icon"
-                  src="./Warp_files/checkmark-05ead90f1f6027acf1cf1c0e4d8ebd96afc9d6bcae2466039526e18e95c07ded.svg"
-                  alt="">
-                <p class="list__text">The Atlas Mastercard is accepted at over 37 million merhants around the world.</p>
-              </div>
-              <div class="list__item">
-                <img class="icon"
-                  src="./Warp_files/checkmark-05ead90f1f6027acf1cf1c0e4d8ebd96afc9d6bcae2466039526e18e95c07ded.svg"
-                  alt="">
-                <p class="list__text">Monitor all your expenses from the App.</p>
-              </div>
-            </div>
-          </div>
-          <div id="terminal_fig">
-            <div class="terminal_pulse"></div>
-            <div class="terminal_pulse"></div>
-            <img src="./Warp_files/terminal-e9f16fe5089c4b0e7c1065f9130ac34c755d5c01fd14811afcc2cc8b4edf46ed.svg"
-              alt="">
-            <div id="pay-card">
-              <img id="thecard"
-                src="./Warp_files/card-a5fd51da7676c970e33f49f53a081f243e6f7b62a553c4ef741af0962cb3c89c.svg"
-                alt="branchless icon">
-            </div>
-          </div>
-        </div>
-      </section> -->
       <section id="support">
         <div class="container-xl xs-rows sm-cols align-items-center">
           <figure>
@@ -343,35 +237,6 @@
           </div>
         </div>
       </section>
-      <!-- <section id="payments">
-        <div class="container-xl xs-rows sm-cols align-items-center">
-          <figure class="phone__md">
-            <div class="phone">
-              <div class="notch">
-                <div class="speaker"></div>
-                <div class="camera"></div>
-              </div>
-              <img src="./Warp_files/myqr_app-52329c80d3cfd1ceca01afb345551cdecd5fdb0097141dd81748a1bab8de7624.png"
-                alt="pay your contacts preview">
-            </div>
-          </figure>
-          <div class="content">
-            <h2 class="body__title">Get your paycheck upto 2 days earlier.</h2>
-            <p class="body__text">Yes. You read that right. All Atlas members are able get their paycheck two days early
-              with direct deposit.<br> That’s two more days with your money.</p>
-          </div>
-          <figure class="phone__xl">
-            <div class="phone right">
-              <div class="notch">
-                <div class="speaker"></div>
-                <div class="camera"></div>
-              </div>
-              <img src="./Warp_files/chat_send-a604c58a7743180d91a1206deec05fa40c95d8e5d5f28d64d0e881a1894c0592.png"
-                alt="payment details preview">
-            </div>
-          </figure>
-        </div>
-      </section> -->
       <section id="cash">
         <div class="container-lg xs-rows sm-cols align-items-center">
           <figure>
@@ -380,8 +245,7 @@
                 <div class="speaker"></div>
                 <div class="camera"></div>
               </div>
-              <img src="./assets/invite-refer.png"
-                alt="pay your contacts preview">
+              <img src="./assets/invite-refer.png" alt="pay your contacts preview">
             </div>
           </figure>
           <div class="content">
@@ -399,7 +263,7 @@
               financial life.</h3>
             <p class="body__item__text">Download the Rift app, and get a savings account that finally saves for you.</p>
             <div class="btn__group">
-              <a href="#" class="nav__link btn btn-primary btn-lg open-account">Open my account</a>
+              <a href="#" class="nav__link btn btn-primary btn-lg open-account">Get Early Access</a>
             </div>
           </div>
           <div class="column">
@@ -448,7 +312,6 @@
                 <div class="list__text">
                   <p>The short answer? Yes.
                     The long answer? Yes.
-
                     We only work with over-collateralized loans. This means that borrowers must put up a larger amount
                     than what they are borrowing for as collateral; your original deposits will never be lost. We
                     partner with top financial firms to move your money safely and deliver best-in-class rates.</p>
@@ -482,8 +345,6 @@
                     All funds on Rift are protected. We take out complete insurance on all assets and funds deposited
                     through Rift, but since we are not a bank, we are not FDIC insured the traditional way. We deploy
                     the best possible 3rd party coverage money can buy.
-
-
                   </p>
                 </div>
               </div>
@@ -514,7 +375,7 @@
   <footer class="app-footer">
     <div class="container-lg">
       <nav class="footer__links">
-        <div class="logo column">
+        <div class="col-2 logo column">
           <a class="navbar__logo" href="https://getatlas.ca/">
             <img src="./assets/images/footer0logo.png" alt="footer logo" height="30px">
           </a>
@@ -525,11 +386,8 @@
           </div>
         </div>
         <div class="col-2 second">
-          <h4>Company</h4>
+          <h4><b>Company</b></h4>
           <ul>
-            <!-- <li>
-              <a href="#">Blog</a>
-            </li> -->
             <li>
               <a href="https://tryrift.notion.site/Careers-Rift-cb4e5cb7c9e34c2ca3eb31f3d069716b">Careers</a>
             </li>
@@ -539,7 +397,7 @@
           </ul>
         </div>
         <div class="col-2">
-          <h4>Resources</h4>
+          <h4><b>Resources</b></h4>
           <ul>
             <li>
               <a href="./legal/tos.html">Terms of Service</a>
@@ -550,13 +408,34 @@
           </ul>
         </div>
         <div class="col-2">
-          <h4>Help</h4>
+          <h4><b>Help</b></h4>
           <ul>
             <li>
               <a href="mailto:haroon@tryrift.com">Ask for help</a>
             </li>
             <li>
               <a href="tel:07958359512">07958359512</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2 social-icons">
+          <h4><b>Social</b></h4>
+          <ul>
+            <li>
+              <a href="https://twitter.com/tryrift" target="_blank">
+                <img src="https://img.icons8.com/color/30/000000/twitter--v1.png" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/tryrift/" target="_blank">
+                <img src="https://img.icons8.com/color/30/000000/instagram-new--v1.png" />
+              </a>
+            </li>
+            <li>
+              <a href="/" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <img src="https://img.icons8.com/color/30/000000/tiktok--v1.png" class="tiktok" alt="tiktok" />
+              </a>
             </li>
           </ul>
         </div>
@@ -576,6 +455,10 @@
     </div>
   </footer>
 
+
+
+
+
   <script async="" src="./Warp_files/js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -590,10 +473,10 @@
     const spendingPhonePreview = document.getElementById("spending_phone_preview")
     const spendingPhonePreviewMD = document.getElementById("spending_phone_preview_md")
     const spendingPreviews = {
-      spending_list_item_notifications: "./assets/image-website-rift.svg",
-      spending_list_item_merchant: "./assets/image-website-rift.svg",
-      spending_list_item_other: "./assets/image-website-rift.svg",
-      spending_list_item_another: "./assets/image-website-rift.svg",
+      spending_list_item_notifications: "./assets/HomewebsiteB.svg",
+      spending_list_item_merchant: "./assets/HomewebsiteB.svg",
+      spending_list_item_other: "./assets/HomewebsiteB.svg",
+      spending_list_item_another: "./assets/HomewebsiteB.svg",
     }
 
 
@@ -784,6 +667,10 @@
       }
     });
   </script>
+
+  <script src="./assets/js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://alertifyjs.com/build/alertify.js"></script>
 
 
 </body>

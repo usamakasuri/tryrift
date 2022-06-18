@@ -6414,7 +6414,7 @@ input:focus, select:focus, textarea:focus, button:focus {
 
 
 #header-section {
-    background: url(/assets/images/banner-bg.png) no-repeat;
+    background: url('./../images/banner-bg.png') no-repeat;
     background-position: top;
     height: 130vh;
     background-size: 100% auto;
@@ -6438,7 +6438,6 @@ input:focus, select:focus, textarea:focus, button:focus {
 
 #header-section .banner-text-section p {
     padding-top: 1em;
-    padding-bottom: 1em;
     font-size: 22px;
     line-height: 1.5;
     font-weight: 400;
@@ -6510,6 +6509,10 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 
 
+.email-button {
+    justify-content: center !important;
+}
+
 img.button-arrow {
     margin-left: 5px;
 }
@@ -6556,6 +6559,52 @@ img.button-arrow {
       display: none;
   }
 
+  .social-icons ul li {
+    float: left !important;
+  }
+
+  .email-enter {
+    border-radius: 25px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    height: 50px;
+    margin-left: 15px;
+    padding-top: 5px;
+    border: none;
+  }
+
+  .submit-email {
+    -webkit-appearance: none;
+    background-color: #1d2224;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    height: 50px;
+    margin-top: 5px;
+    /* margin-left: 30px; */
+    border: none;
+    padding: 0px 20px;
+    position: absolute;
+    right: 0;
+  }
+
+  .join-button {
+    border-radius: 100px;
+    -webkit-filter: drop-shadow(0 2px 8px #BCC4EE);
+    filter: drop-shadow(0 2px 8px #BCC4EE);
+    height: 60px;
+    background: #fff;
+    /* width: 550px; */
+    padding: 0px 7px;
+  }
+
+  .email-subscription {
+    position: relative;
+}
+
 
   @media screen and (max-width: 768px) {
     .desktop-text {
@@ -6588,4 +6637,66 @@ img.button-arrow {
         background-color: #1d2224;
         height: 100vh;
     }
-  }
+    .app-footer nav.footer__links .column {
+        flex: 0 0 50%;
+        max-width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        }
+    .app-footer nav.footer__links .col-2 {
+        flex: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    nav.footer__meta.xs-rows.sm-cols {
+        text-align: center;
+    }
+    .col-2.social-icons {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.email-enter {
+    width: 165px; 
+}
+
+
+}
+
+@media screen and (max-width: 991px) { 
+    #header-section {
+        background-image: none;
+        background-color: #1d2224;
+        height: 100vh;
+    }
+    .email-enter {
+        border-radius: 25px;
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+        height: 54px;
+        margin-left: 15px;
+        padding-top: 5px;
+        border: none;  
+    }
+    .submit-email {
+        -webkit-appearance: none;
+        background-color: #1d2224;
+        border-radius: 25px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 500;
+        height: 50px;
+        margin-top: 5px;
+        /* margin-left: 30px; */
+        border: none;
+        padding: 0px 12px;
+        position: absolute;
+        right: 0;
+    }
+    #header-section .banner-text-section p {
+        font-size: 18px;
+    }
+}
